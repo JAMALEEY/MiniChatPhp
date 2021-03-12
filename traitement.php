@@ -1,14 +1,15 @@
 <?php
 include_once('database.php');
+session_start();
 if (isset($_POST['envoyer'])) {
-    $a = ($_POST['utilisateur']);
+    $a = ($_SESSION['prenom']);
     $b = ($_POST['message']);
-    $c = date("Y-m-d H:i:s");
+    $c = date("Y-m-d H:i:s"); 
 $sql = mysqli_query($link, "INSERT INTO messages (utilisateur, contenu_message, temps) VALUES ('$a','$b', '$c')
 ");
     header('Location: ./index.php');
 }
-// header('Location: ./index.php');
+
 // si le message est envoyé correctement
     // récupérer les données dans des variables
     // si les valeurs récupéré sont vides

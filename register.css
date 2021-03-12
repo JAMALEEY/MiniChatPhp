@@ -1,0 +1,41 @@
+
+
+.adslayhsn3wan {
+    
+        display: flex;
+        justify-content: center;
+}
+.adslayhsn3wan img{
+    width: 29%;
+    height: 1%;
+}
+
+.adslayhsn3wan .gifads {
+    width: 6%;
+}
+
+.formcontainer{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.form{
+    z-index:5;
+}
+
+.fenetre{
+background-color: #bfbfbf;
+border: solid blue;
+    padding: 20px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
